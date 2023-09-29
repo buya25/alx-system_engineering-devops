@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Get the PID of the current script
+mypid=4120
+# Display the PID
+echo "$mypid"
