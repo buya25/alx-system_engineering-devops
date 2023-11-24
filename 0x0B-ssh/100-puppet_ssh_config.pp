@@ -13,4 +13,3 @@ file_line { 'Turn off password authentication':
   line    => 'PasswordAuthentication no',
   match   => '^#?PasswordAuthentication',
 }
-2-ssh_config
