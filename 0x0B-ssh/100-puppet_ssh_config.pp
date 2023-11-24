@@ -1,15 +1,13 @@
-# Configure ssh client file
+# Configure ssh config file
 
-# Ensure the private key is used for authentication
-file_line { 'Use private key for authentication':
+file_line { 'Turn off passwd auth':
   path    => '/etc/ssh/ssh_config',
-  line    => 'IdentityFile ~/.ssh/school',
-  match   => '^#?IdentityFile',
+  line    => '    PasswordAuthentication no',
+  replace => true
 }
 
-# Disable password authentication
-file_line { 'Turn off password authentication':
+file_line { 'Declare identity file':
   path    => '/etc/ssh/ssh_config',
-  line    => 'PasswordAuthentication no',
-  match   => '^#?PasswordAuthentication',
+  line    => '    IdentityFile ~/.ssh/school',
+  replace => true
 }
