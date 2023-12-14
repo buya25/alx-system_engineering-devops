@@ -1,0 +1,37 @@
+Title: "Demystifying the Journey of a Click: What Happens When You Type https://www.google.com and Press Enter"
+
+Have you ever wondered what goes on behind the scenes when you hit Enter after typing a website address in your browser? The journey from keystroke to webpage is a fascinating process that involves several steps, each playing a crucial role in delivering the content seamlessly. In this blog post, we'll embark on a journey through the intricacies of the internet to understand what happens when you type "https://www.google.com" and press Enter.
+
+### 1. DNS Request:
+
+The journey begins with the Domain Name System (DNS). When you type a URL like "https://www.google.com," your computer initiates a DNS request to convert the human-readable domain name (www.google.com) into an IP address. DNS acts like a digital phonebook, translating the URL into a numerical IP address that computers use to locate each other on the internet.
+
+### 2. TCP/IP:
+
+Once the IP address is obtained, your computer establishes a connection using the Transmission Control Protocol (TCP) and Internet Protocol (IP). TCP ensures reliable communication by breaking down data into packets and confirming their successful delivery, while IP routes these packets across the internet to the destination.
+
+### 3. Firewall:
+
+Before your computer can communicate with the destination server, it may encounter a firewall. Firewalls act as digital bouncers, monitoring and controlling incoming and outgoing network traffic based on predetermined security rules. If all security checks pass, your request is allowed to proceed.
+
+### 4. HTTPS/SSL:
+
+Security is paramount, especially when exchanging sensitive information. Hypertext Transfer Protocol Secure (HTTPS) ensures a secure connection between your browser and the server. This is achieved through the implementation of Secure Sockets Layer (SSL) or its successor, Transport Layer Security (TLS). These cryptographic protocols encrypt the data, making it unreadable to anyone intercepting the communication.
+
+### 5. Load-Balancer:
+
+For popular websites like Google, a single server may not be enough to handle all incoming requests efficiently. Load balancers come into play by distributing the incoming traffic across multiple servers. This not only ensures optimal performance but also enhances the website's reliability and availability.
+
+### 6. Web Server:
+
+Upon successfully navigating through the load balancer, your request reaches a web server. The web server is responsible for processing the request, retrieving the requested webpage or data, and sending it back to your browser for display.
+
+### 7. Application Server:
+
+In some cases, especially with dynamic content or interactive features, the web server may communicate with an application server. The application server processes specific tasks or business logic before providing the necessary data to the web server for final delivery.
+
+### 8. Database:
+
+Behind every dynamic website lies a database that stores and manages data. The application server, upon receiving your request, might query the database to fetch the required information. This could include user data, search results, or any other dynamic content.
+
+In conclusion, the seemingly simple act of typing "https://www.google.com" and pressing Enter triggers a complex orchestration of processes involving DNS, TCP/IP, firewalls, HTTPS/SSL, load-balancers, web servers, application servers, and databases. Each step in this journey plays a vital role in ensuring a secure, efficient, and seamless browsing experience. The next time you enter a URL, remember the intricate dance happening behind the scenes, making the internet a marvel of modern technology.
