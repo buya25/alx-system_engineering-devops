@@ -5,6 +5,6 @@ Host *
     GSSAPIDelegateCredentials no
 
 # school server config options
-Host 35.243.204.105
+Host 18.207.207.57
     IdentityFile ~/.ssh/school
     Protocol 2
