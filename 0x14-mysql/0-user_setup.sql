@@ -1,8 +1,10 @@
 -- script to setup replica user on master sql server
 
-CREATE USER IF NOT EXISTS 'holberton_user'@'%' IDENTIFIED BY 'password';
-GRANT REPLICATION SLAVE ON *.* TO 'holberton_user'@'%';
+CREATE USER IF NOT EXISTS 'holberton_user'@'%' IDENTIFIED BY 'projectcorrection280hbtn';
+GRANT REPLICATION CLIENT ON *.* TO 'holberton_user'@'%';
+FLUSH PRIVILEGES;
 GRANT SELECT ON *.* TO 'holberton_user'@'%';
 
 -- check that it was configured properly 
 SELECT user, Repl_slave_priv FROM mysql.user;
+mysql -uholberton_user -p -e "SHOW GRANTS FOR 'holberton_user'@'localhost'"
