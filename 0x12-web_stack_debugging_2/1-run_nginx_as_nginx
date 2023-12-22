@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-# debugging nginx (service (init) must say that nginx is not running)
-sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
-service nginx restart
-pkill -o nginx
+# nginx as su instead of root
+pkill "apache2"
+sudo sed -i '1i user nginx;' /etc/nginx/nginx.conf
+sudo sed -i 's/\<80\>/&80/' /etc/nginx/sites-available/default
+sudo chmod 644 /etc/nginx/nginx.conf
+sudo -u nginx service nginx restart
