@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#SSH client configaration
+# SSH client configaration
 Host *
     PasswordAuthentication no
     IdentifyFile ~/.ssh/school
